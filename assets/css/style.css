@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    background-image: url("./background.png"); /* Fixed: Added url() */
+    background-color: #000; /* Fallback if the image doesn't load */
+    color: #0f0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.value {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.buy-button, .login-button, .register-button {
+    padding: 10px 20px;
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.buy-button:hover, .login-button:hover, .register-button:hover {
+    background-color: #f00;
+    color: #fff;
+}
+
+.login-panel, .register-panel {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #0f0;
+    display: inline-block;
+    text-align: left;
+    background-color: #002200;
+}
+
+input {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.glitch {
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
