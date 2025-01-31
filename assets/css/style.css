@@ -2,7 +2,7 @@
 body {
     font-family: "Courier New", monospace;
     text-align: center;
-    background-image: url("./background.png"); /* Fixed: Added url() */
+    background-image: url("../img/background.png"); /* Fixed: Added url() */
     background-color: #000; /* Fallback if the image doesn't load */
     color: #0f0;
 }
